@@ -37,7 +37,7 @@ class Program
         int wholeGrade = (int)Math.Floor(grade);
         int lastDigit = wholeGrade % 10;
 
-        //Determine the + or - sign
+        //Determine the + or - sign. 
         if (lastDigit >= 7)
         {
             sign = "+";
@@ -48,10 +48,18 @@ class Program
         }
 
         // Handle special cases
-        if (letter == "A" && sign == "+")
+        if (letter == "A")
         {
-            sign = "";
+            if (grade >= 93)
+            {
+                sign = "";
+            }
+            else if (sign == "+")
+            {
+                sign = "";
+            }
         }
+
         if (letter == "F")
         {
             sign = "";
