@@ -31,14 +31,14 @@ public class Scripture
 
     public string GetDisplayText()
     {
-        string display = _reference.GetDisplayText() + "\n\n";
+        string text = _reference.GetDisplayText() + "\n\n";
 
         foreach (Word word in _words)
         {
-            display += word.GetDisplayText() + " ";
+            text += word.GetDisplayText() + " ";
         }
 
-        return display.Trim();
+        return text.Trim();
     }
 
     public bool IsCompletelyHidden()
