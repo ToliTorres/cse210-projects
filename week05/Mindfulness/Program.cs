@@ -1,21 +1,29 @@
+/*
+EXTRA CREDIT:
+Added reusable spinner and countdown animations in the base Activity class.
+These animations improve user experience and are shared across all activities,
+demonstrating clean inheritance, abstraction, and reduced code duplication.
+*/
+
 using System;
 
 class Program
 {
     static void Main(string[] args)
     {
-        bool running = true;
+        string choice = "";
 
-        while (running)
+        while (choice != "4")
         {
-            Console.WriteLine("Menu Options:");
+            Console.Clear();
+            Console.WriteLine("Mindfulness Program");
             Console.WriteLine("1. Breathing Activity");
             Console.WriteLine("2. Reflection Activity");
             Console.WriteLine("3. Listing Activity");
             Console.WriteLine("4. Quit");
-            Console.Write("Select a choice from the menu: ");
+            Console.Write("Select an option: ");
 
-            string choice = Console.ReadLine();
+            choice = Console.ReadLine();
 
             Activity activity = null;
 
@@ -29,9 +37,6 @@ class Program
                     break;
                 case "3":
                     activity = new ListingActivity();
-                    break;
-                case "4":
-                    running = false;
                     break;
             }
 
