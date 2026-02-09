@@ -1,3 +1,10 @@
+// Exceeding Requirements:
+// This program improves the scripture memorization experience by ensuring that
+// only visible words are hidden each round, preventing already hidden words from
+// being selected again. This makes the activity more effective and challenging.
+// Additionally, the design supports working with multiple scriptures, allowing
+// one to be selected and memorized instead of repeating a single passage.
+
 using System;
 
 class Program
