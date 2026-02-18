@@ -1,0 +1,5 @@
+40
+1
+SimpleGoal:go to the gym,Go to the gym every nigth,20,True
+EternalGoal:Read the book of mormon,Read the book of mormon before sleep,30
+NegativeGoal:eat fast food,Eat fast food when I go out,10
